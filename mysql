@@ -17,10 +17,10 @@ mysql -u root -p (패스워드생략)
 Enter password:패스워드
 
 유저생성
-create user 'the'@'localhost' identified by '12345678';
+create user 'the'@'localhost' identified by '********';
 Query OK, 0 rows affected (0.01 sec)
 
-create user 'the'@'%' identified by '12345678';
+create user 'the'@'%' identified by '********';
 Query OK, 0 rows affected (0.00 sec)
 
 ex> grant select,insert,update on 스키마.테이블
