@@ -16,10 +16,10 @@ mysql_secure_installation
 Enter password: 
 
 유저생성
-mysql> create user 'the'@'localhost' identified by '12345678';
+mysql> create user 'the'@'localhost' identified by '(비밀번호)********';
 Query OK, 0 rows affected (0.01 sec)
 
-mysql> create user 'the'@'%' identified by '12345678';
+mysql> create user 'the'@'%' identified by '********';
 Query OK, 0 rows affected (0.01 sec)
 
 ex> grant select,insert,update on 스키마.테이블 
