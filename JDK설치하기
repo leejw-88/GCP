@@ -29,7 +29,7 @@ sodo ln -s jdk-11.0.11/    java
 경로이동
 cd /etc/
 파일 에 내용 수정(삽입)
-sudo vim  pfofile
+sudo vim  profile
 -------------------
 JAVA_HOME=/usr/local/java
 PATH=$PATH:$JAVA_HOME/bin
