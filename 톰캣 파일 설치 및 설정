@@ -31,4 +31,10 @@ cd /usr/local/apache-tomcat-9.0.46/conf/
 
 <Host name="localhost"  appBase="."
             unpackWARs="false" autoDeploy="false">
-        <Context docBase="/home//src/root" path="" reloadable="false" />
+        <Context docBase="/home/유저아이디/src/root" path="" reloadable="false" />
+        
+/home/유저아이디/src/root 폴더 생성       
+cd
+mkdir src
+cd src
+mkdir root
