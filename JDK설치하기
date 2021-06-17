@@ -15,7 +15,7 @@ Linux x64 RPM Package	156.07 MB	                       jdk-11.0.11_linux-x64_bin
 Linux x64 Compressed Archive	173.46 MB	               jdk-11.0.11_linux-x64_bin.tar.gz   <-------------------------------- 이파일 선택
 
 2. 파일업로드...
-gunzip    jdk-11.0.11_linux-x64_bin.tar.gz
+gunzip    jdk-11.0.11_linux-x64_bin.tar.gz  or (tar -zxf)
 tar -xf   jdk-11.0.11_linux-x64_bin.tar
 jdk-11.0.11 폴더 생성
 3. 생성된 폴더 이동
