@@ -27,6 +27,8 @@ ex> grant select,insert,update on 스키마.테이블
 모든권한부여  모든스키마의 모든테이블 스키마.table
 mysql> grant all privileges on *.* to 'the'@'%';
 Query OK, 0 rows affected (0.01 sec)
+부여된 권한
+mysql> show all privileges on *.* from 'the'@'%';
 
 mysql> exit
 Bye
