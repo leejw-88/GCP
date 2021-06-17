@@ -1,6 +1,7 @@
   
 1. 설치
 sudo yum install mysql-server
+sudo yum -y install mysql-server    -y중간에 yes or no 선택시 모두 yes
 
 2. 시스템 재시작시 mysql이 자동으로 실행되도록하기위해
 sudo systemctl enable mysqld
