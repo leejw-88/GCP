@@ -1,0 +1,34 @@
+톰캣 홈페이지에서 파일다운로드
+https://tomcat.apache.org/download-90.cgi 
+Core:
+  zip (pgp, sha512)
+  tar.gz (pgp, sha512)  <-----------------여기 다운로드
+  32-bit Windows zip (pgp, sha512)
+  64-bit Windows zip (pgp, sha512)
+  32-bit/64-bit Windows Service Installer (pgp, sha512)
+  
+1.  구글GCP에 파일 업로드 
+2.  앞축해제
+   gunzip apache-tomcat-9.0.46.tar.gz
+   tar -xvf apache-tomcat-9.0.46.tar 
+ 
+ apache-tomcat-9.0.46 폴더가 생성됩니다.
+ 
+ 생성된 폴더를 /usr/local 폴더로 이동
+3.  sudo mv apache-tomcat-9.0.46  /usr/local/
+
+디렉터리 이동
+cd /usr/local/apache-tomcat-9.0.46/conf/
+4.  sudo vim server.xml 
+내용수정   
+키보드 i키누르면 하단에  --INSERT -- 모드로 바꼈다고 뜨고
+내용 수정하면됩니다.
+
+수정이 완료되면   esc 키 눌러서 --INSERT--모드 해제하고
+
+:wq  (w 저장, q 나가기)
+// unpackWARs, autoDeploy 성능에 영향이 있을수 있으므로 해제
+
+<Host name="localhost"  appBase="."
+            unpackWARs="false" autoDeploy="false">
+        <Context docBase="/home/coding7749/src/root" path="" reloadable="false" />
